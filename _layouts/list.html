@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+{% include head.html %}
+
+<body>
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Main -->
+        <div id="main">
+            <div class="inner">
+
+                {% include header.html %}
+
+                <!-- Content -->
+                <section>
+                    <header class="major">
+                        <h2>Posts</h2>
+                    </header>
+                    <!-- page.show == all 인 경우는, 모든 포스트를 보여줄 때를 말함, 그 외에는 폴더별 포스트를 보여줌 -->
+                    {% if page.show == 'all' %}
+                    {% assign posts = site.pages | exclude:'private' | filter:'index' %}
+                    {% else %}
+                    {% assign posts = site.pages | inside:page.directory | filter:'index' %}
+                    {% endif %}
+                    {% for post in posts %}
+                    <h2>{{ post.title }}</h2>
+                    <p>{{ post.content | strip_html | truncate:200 }}</p>
+                    <ul class="actions">
+                        <li><a href="{{ post.url | absolute_url }}" class="button">More</a></li>
+                    </ul>
+                    <hr class="major"/>
+                    {% endfor %}
+                </section>
+
+              </div>
+          </div>
+
+          {% include sidebar.html %}
+
+      </div>
+
+      {% include footer.html %}
+
+</body>
+
+</html>
