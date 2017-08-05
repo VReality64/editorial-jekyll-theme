@@ -15,20 +15,20 @@
             <h2>Menu</h2>
           </header>
           <ul>
-            <li><a href="{{ '' | absolute_url }}">Homepage</a></li>
-            <li><a href="{{ 'generic.html' | absolute_url }}">Generic</a></li>
-            <li><a href="{{ 'elements.html' | absolute_url }}">Elements</a></li>
+            <li><a href="{{ base_url + '' | absolute_url }}">Homepage</a></li>
+            <li><a href="{{ base_url + 'generic.html' | absolute_url }}">Generic</a></li>
+            <li><a href="{{ base_url + 'elements.html' | absolute_url }}">Elements</a></li>
             <li>
               <span class="opener">Submenu</span>
               <ul>
-                <li><a href="#">Lorem Dolor</a></li>
+                <li><a href="{{ base_url + 'test.html' }}">blog / test</a></li>
                 <li><a href="#">Ipsum Adipiscing</a></li>
                 <li><a href="#">Tempus Magna</a></li>
                 <li><a href="#">Feugiat Veroeros</a></li>
               </ul>
             </li>
             <li><a href="#">Etiam Dolore</a></li>
-            <li><a href="{{ 'adipiscing.html' }}">Adipiscing</a></li>
+            <li><a href="{{ base_url + 'adipiscing.html' }}">Adipiscing</a></li>
             <li>
               <span class="opener">Another Submenu</span>
               <ul>

@@ -3,7 +3,7 @@ title: Riverside over the Ocean
 subtitle: by Ian Park
 email: vreality64@gmail.com
 description: 개인 블로그 입 니다 :)
-baseurl: "" # the subpath of your site, e.g. /blog
+base_url: "" # the subpath of your site, e.g. /blog
 # url: "" # the base hostname & protocol for your site
 author: Seonghyeon Park
 city: Seoul
