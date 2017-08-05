@@ -16,8 +16,8 @@
           </header>
           <ul>
             <li><a href="{{ '' | absolute_url }}">Homepage</a></li>
-            <li><a href="{{ site.base_url + 'generic.html' | absolute_url }}">Generic</a></li>
-            <li><a href="{{ site.base_url + 'elements.html' | absolute_url }}">Elements</a></li>
+            <li><a href="{{ 'generic.html' | absolute_url }}">Generic</a></li>
+            <li><a href="{{ '123' + '456' | absolute_url }}">Elements</a></li>
             <li>
               <span class="opener">Submenu</span>
               <ul>
@@ -27,7 +27,7 @@
                 <li><a href="#">Feugiat Veroeros</a></li>
               </ul>
             </li>
-            <li><a href="{{ site.base_url + 'another_submenu.html' }}">Etiam Dolore</a></li>
+            <li><a href="{{ 123 + 456 }}">Etiam Dolore</a></li>
             <li><a href="{{ site.base_url + 'adipiscing.html' }}">Adipiscing</a></li>
             <li>
               <span class="opener">Another Submenu</span>
