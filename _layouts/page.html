@@ -26,7 +26,7 @@
                 	</header>
 
                   {% if page.image %}
-                	<span class="image main"><img src="{{ page.image }}" alt="" /></span>
+                	<span class="image main"><img src="{{ page.image | root }}" alt="" /></span>
                   {% endif %}
 
                 {{ content }}

@@ -21,6 +21,14 @@ module Jekyll
       deco = @context.registers[:site].config['subtitle']
       "#{title} #{deco}"
     end
+
+    def root(url)
+      "/#{url}"
+    end
+
+    def image(url)
+      "assets/images/#{url}"
+    end
   end
 
   module SomeFilter
