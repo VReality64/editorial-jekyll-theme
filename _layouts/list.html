@@ -34,7 +34,7 @@
                     <h2>{{ post.title }}</h2>
                     <p>{{ post.content | strip_html | truncate:200 }}</p>
                     <ul class="actions">
-                        <li><a href="{{ post.url | absolute_url }}" class="button">More</a></li>
+                        <li><a href="{{ post.url }}" class="button">More</a></li>
                     </ul>
                     <hr class="major"/>
                     {% endfor %}
