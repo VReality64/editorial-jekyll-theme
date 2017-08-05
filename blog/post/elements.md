@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Elements
+image: assets/images/pic09.jpg
 ---
 
 <h2 id="content">Sample Content</h2>
@@ -356,7 +357,7 @@ title: Elements
 			<h3>Image</h3>
 
 			<h4>Fit</h4>
-			<span class="image fit"><img src="assets/images/pic11.jpg" alt="" /></span>
+			<span class="image fit"><img src="assets/images/pic10.jpg" alt="" /></span>
 			<div class="box alt">
 				<div class="row 50% uniform">
 					<div class="4u"><span class="image fit"><img src="assets/images/pic01.jpg" alt="" /></span></div>

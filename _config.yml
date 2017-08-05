@@ -2,13 +2,12 @@
 title: Riverside over the Ocean
 subtitle: by Ian Park
 email: vreality64@gmail.com
-description: 개인 블로그 입 니다 :)
-base_url: "/blog/" # the subpath of your site, e.g. /blog
+description: 개인 블로그 입니다 :)
+base_url: /blog # the subpath of your site, e.g. /blog
 # url: "" # the base hostname & protocol for your site
 author: Seonghyeon Park
 city: Seoul
 country: Republic of Korea
-phone: (+82)10 0000-0000
 
 # Social settings
 github_url: https://www.github.com/vreality64
@@ -16,3 +15,25 @@ linkedin_url: https://www.linkedin.com/in/vreality64
 
 # Build settings
 markdown: kramdown
+# paginate: 5
+# paginate_path: "/blog/post/page:num/"
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "demo"
+    values:
+      layout: "page"
+      author: "Ian Park"
+
+collections:
+  blog:
+    output: true
+    permalink: /:collection/post/:name
+  demo:
+    output: true
+    permalink: /:collection/:name
+
+  # posts:
+  #  output: true
